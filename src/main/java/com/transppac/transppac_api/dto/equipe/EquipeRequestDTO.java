@@ -1,5 +1,5 @@
 
-package com.transppac.transppac_api.equipe.dto;
+package com.transppac.transppac_api.dto.equipe;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

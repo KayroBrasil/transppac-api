@@ -1,5 +1,5 @@
 
-package com.transppac.transppac_api.usuario.dto;
+package com.transppac.transppac_api.dto.usuario;
 
 public class UsuarioResponseDTO {
 

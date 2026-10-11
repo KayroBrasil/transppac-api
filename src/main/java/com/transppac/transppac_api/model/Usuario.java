@@ -1,8 +1,4 @@
-
-package com.transppac.transppac_api.usuario;
-
-import com.transppac.transppac_api.equipe.Equipe;
-import com.transppac.transppac_api.setor.Setor;
+package com.transppac.transppac_api.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -10,11 +6,21 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.UniqueConstraint;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.Column;
 
 @Entity
-@Table(name = "usuarios")
+@Table(
+    name = "usuarios",
+    uniqueConstraints = {
+        @UniqueConstraint(
+            name = "uk_usuarios_email",
+            columnNames = "email"
+        )
+    }
+)
 public class Usuario {
 
     @Id
@@ -23,6 +29,7 @@ public class Usuario {
 
     private String nome;
 
+    @Column(nullable = false)
     private String email;
 
     private String senha;

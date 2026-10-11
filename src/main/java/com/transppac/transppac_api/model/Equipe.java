@@ -1,5 +1,4 @@
-
-package com.transppac.transppac_api.equipe;
+package com.transppac.transppac_api.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

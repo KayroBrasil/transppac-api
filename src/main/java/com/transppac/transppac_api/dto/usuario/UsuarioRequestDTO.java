@@ -1,5 +1,4 @@
-
-package com.transppac.transppac_api.usuario.dto;
+package com.transppac.transppac_api.dto.usuario;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

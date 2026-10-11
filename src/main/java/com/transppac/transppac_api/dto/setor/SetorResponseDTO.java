@@ -1,5 +1,5 @@
 
-package com.transppac.transppac_api.setor.dto;
+package com.transppac.transppac_api.dto.setor;
 
 public class SetorResponseDTO {
 
